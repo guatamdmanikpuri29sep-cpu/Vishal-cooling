@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal Cooling - Best Repair Service Bilaspur</title>
+    <title>Vishal Cooling & Solutions - Bilaspur</title>
     <style>
         body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.8; }
         header { background: #004aad; color: white; padding: 40px 20px; text-align: center; }
         .container { max-width: 900px; margin: 20px auto; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
         .slogan { font-style: italic; color: #ffcc00; font-weight: bold; font-size: 1.2em; }
+        
+        /* New Trust Section */
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; margin: 25px 0; text-align: center; }
+        .trust-item { background: #fffdf0; padding: 15px; border-radius: 10px; border: 1px solid #ffeeba; }
+        .trust-item span { font-size: 25px; display: block; }
+        .trust-item p { margin: 5px 0 0; font-size: 0.85em; font-weight: bold; color: #856404; }
+
         .service-box { border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 10px; border-left: 5px solid #004aad; }
-        .booking-form { background: #eef5ff; padding: 20px; border-radius: 10px; margin: 20px 0; }
-        .booking-form input, .booking-form select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        .area-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; list-style: none; padding: 0; }
+        .area-list li { background: #f0f4f8; padding: 5px; border-radius: 4px; font-size: 0.8em; text-align: center; border: 1px solid #d1d9e0; }
+        
+        .btn-map { background: #4285F4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; margin-bottom: 20px; }
+        .booking-form { background: #eef5ff; padding: 20px; border-radius: 10px; margin: 20px 0; border: 1px solid #cce0ff; }
         .btn-submit { background: #004aad; color: white; padding: 15px; width: 100%; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
-        .terms { background: #fff9e6; padding: 15px; border-radius: 10px; font-size: 0.9em; margin-top: 20px; border: 1px dashed #ffcc00; }
+        .terms { background: #fff5f5; padding: 15px; border-radius: 10px; border: 1px dashed #ff5c5c; margin-top: 20px; font-size: 0.9em; }
         .footer { background: #111; color: white; text-align: center; padding: 30px; margin-top: 30px; }
     </style>
 </head>
@@ -25,45 +35,62 @@
 </header>
 
 <div class="container">
+
+    <div class="trust-grid">
+        <div class="trust-item"><span>🛠️</span><p>Expert Repair</p></div>
+        <div class="trust-item"><span>⚙️</span><p>Original Parts</p></div>
+        <div class="trust-item"><span>🕒</span><p>Fast Service</p></div>
+        <div class="trust-item"><span>✅</span><p>Verified Shop</p></div>
+    </div>
+
     <section class="booking-form">
-        <h2>Online Booking (यहाँ बुक करें)</h2>
+        <h2 style="margin-top:0;">Book Service Online</h2>
         <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
-            <input type="text" name="name" placeholder="आपका नाम" required>
-            <input type="tel" name="phone" placeholder="मोबाइल नंबर" required>
-            <select name="service">
-                <option>AC Repair & Service</option>
-                <option>Fridge Repair</option>
+            <input type="text" name="name" placeholder="आपका नाम" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;" required>
+            <input type="tel" name="phone" placeholder="मोबाइल नंबर" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;" required>
+            <select name="service" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;">
+                <option>AC Service/Repair</option>
                 <option>Washing Machine Repair</option>
+                <option>Fridge Repair</option>
             </select>
-            <button type="submit" class="btn-submit">सबमिट करें</button>
+            <button type="submit" class="btn-submit">अभी बुकिंग भेजें</button>
         </form>
     </section>
 
-    <h2>Our Services (पुरानी दरें)</h2>
+    <center>
+        <a href="https://maps.google.com/?q=Ashok+Nagar+Sarkanda+Bilaspur" target="_blank" class="btn-map">📍 Open Shop Location in Maps</a>
+    </center>
+
+    <h2>Services & Rates (पुरानी दरें)</h2>
     <div class="service-box">
         <h3>❄️ AC Service @ ₹499/-</h3>
-        <p>Complete Jet Pump Cleaning.</p>
+        <p>Complete Jet Pump Cleaning and Checkup.</p>
     </div>
     <div class="service-box">
         <h3>🧺 Washing Machine @ ₹249/-</h3>
-        <p>Top Load & Front Load Expert.</p>
+        <p>Expert solutions for all brands.</p>
     </div>
 
+    <h2>Service Areas (40 KM Range)</h2>
+    <ul class="area-list">
+        <li>📍 सरकंडा</li><li>📍 कोनी</li><li>📍 मंगला</li><li>📍 सकरी</li><li>📍 उसलापुर</li><li>📍 तिफरा</li><li>📍 रतनपुर</li><li>📍 तखतपुर</li><li>📍 मस्तुरी</li><li>📍 कोटा</li><li>📍 सीपत</li><li>📍 बिल्हा</li>
+    </ul>
+
     <section class="terms">
-        <h3>नियम और शर्तें (Terms)</h3>
-        <p>✔️ 30 दिन की सर्विस वारंटी</p>
-        <p>✔️ विज़िटिंग चार्ज अनिवार्य (अगर काम न कराया जाए)</p>
-        <p>✔️ ओरिजिनल स्पेयर पार्ट्स</p>
+        <h3 style="margin-top:0; color:#c0392b;">नियम और शर्तें (Terms)</h3>
+        <p>• 30 दिन की सर्विस वारंटी।</p>
+        <p>• विज़िटिंग चार्ज अनिवार्य है (काम न होने पर)।</p>
+        <p>• हम केवल ओरिजिनल स्पेयर पार्ट्स इस्तेमाल करते हैं।</p>
     </section>
 
     <center>
-        <a href="https://wa.me/917869248808" style="display:inline-block; background:#25d366; color:white; padding:15px 30px; text-decoration:none; border-radius:50px; font-weight:bold; margin-top:20px;">WhatsApp Chat</a>
+        <a href="https://wa.me/917869248808" style="display:inline-block; background:#25d366; color:white; padding:15px 35px; text-decoration:none; border-radius:50px; font-weight:bold; margin:25px 0; font-size:1.1em;">Direct WhatsApp Chat</a>
     </center>
 </div>
 
 <div class="footer">
-    <p>📞 Call: 78692 48808 | 📍 Ashok Nagar, Bilaspur</p>
-    <p>© 2026 Vishal Cooling Solutions</p>
+    <p>📞 Call: 78692 48808 | 📍 बिलासपुर, छत्तीसगढ़</p>
+    <p>© 2026 Vishal Cooling - Quality You Can Trust</p>
 </div>
 
 </body>

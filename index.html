@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishal Cooling & Technical Solutions - Bilaspur</title>
     <style>
-        /* ठंडक वाला बैकग्राउंड और स्टाइल */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); color: #333; line-height: 1.6; }
-        header { background: linear-gradient(to right, #004aad, #00c6ff); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h1 { margin: 0; font-size: 2.2em; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        /* कूलिंग ब्लू थीम और डिजाइन */
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); color: #333; line-height: 1.6; }
+        header { background: linear-gradient(to right, #004aad, #00c6ff); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        h1 { margin: 0; font-size: 2.2em; text-transform: uppercase; letter-spacing: 1px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
         .slogan { font-style: italic; color: #ffcc00; font-weight: bold; font-size: 1.2em; margin-top: 10px; }
         
-        .container { max-width: 1000px; margin: 20px auto; background: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .container { max-width: 900px; margin: 20px auto; background: rgba(255, 255, 255, 0.95); padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         
-        /* Photos Section */
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 30px 0; }
-        .gallery-item { border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 3px solid #fff; transition: transform 0.3s; }
-        .gallery-item:hover { transform: scale(1.05); }
-        .gallery-item img { width: 100%; height: 180px; object-fit: cover; display: block; }
-        .gallery-item p { background: #004aad; color: white; margin: 0; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em; }
+        /* रेटिंग डिस्प्ले सेक्शन */
+        .rating-display { background: #fff8e1; padding: 20px; border-radius: 15px; text-align: center; margin: 20px 0; border: 1px solid #ffe082; }
+        .stars { color: #fbc02d; font-size: 28px; }
 
-        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; margin: 25px 0; text-align: center; }
-        .trust-item { background: #f0faff; padding: 15px; border-radius: 12px; border: 1px solid #b3e5fc; }
-        
-        .service-box { background: #fff; border: 1px solid #e1e8ed; padding: 15px; margin: 15px 0; border-radius: 12px; border-left: 6px solid #00c6ff; }
-        .btn-map { background: #4285F4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; margin: 20px 0; }
-        .area-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; list-style: none; padding: 0; }
-        .area-list li { background: #e3f2fd; padding: 8px; border-radius: 6px; font-size: 0.85em; text-align: center; font-weight: bold; color: #01579b; }
+        /* काम की फोटोज़ */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 25px 0; }
+        .gallery-item { border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background: #004aad; color: white; text-align: center; }
+        .gallery-item img { width: 100%; height: 150px; object-fit: cover; }
+        .gallery-item p { margin: 8px 0; font-size: 0.9em; font-weight: bold; }
 
-        .footer { background: #111; color: white; text-align: center; padding: 40px; margin-top: 40px; }
-        .whatsapp-btn { background: #25d366; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+        /* सर्विस रेट्स (सुरक्षित) */
+        .service-box { background: white; border: 1px solid #e1e8ed; padding: 15px; margin: 15px 0; border-radius: 12px; border-left: 6px solid #00c6ff; }
+        .price { color: #d32f2f; font-weight: bold; font-size: 1.2em; }
+
+        /* नया रेटिंग फॉर्म (WhatsApp Feature) */
+        .rate-us-box { background: #e3f2fd; padding: 25px; border-radius: 15px; border: 2px solid #004aad; margin-top: 30px; text-align: center; }
+        .rate-us-box input, .rate-us-box textarea, .rate-us-box select { width: 90%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc; font-size: 1em; }
+        .submit-btn { background: #004aad; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; width: 90%; }
+
+        .whatsapp-float { background: #25d366; color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; font-size: 1.1em; margin: 20px 0; box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
+        .footer { background: #111; color: white; text-align: center; padding: 30px; margin-top: 40px; border-radius: 20px 20px 0 0; }
     </style>
 </head>
 <body>
@@ -40,65 +44,85 @@
 </header>
 
 <div class="container">
-
-    <div class="trust-grid">
-        <div class="trust-item"><span>❄️</span><p>Fast Cooling</p></div>
-        <div class="trust-item"><span>🛠️</span><p>Expert Service</p></div>
-        <div class="trust-item"><span>⚙️</span><p>Original Parts</p></div>
-        <div class="trust-item"><span>🛡️</span><p>Warranty</p></div>
+    
+    <div class="rating-display">
+        <h3>⭐ ग्राहकों का भरोसा ⭐</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p><b>4.9/5 Rating</b> (150+ खुश ग्राहक)</p>
     </div>
 
-    <h2 style="text-align: center; color: #004aad;">Our Expert Works</h2>
     <div class="gallery">
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80" alt="AC Service">
-            <p>AC Repair & Service</p>
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=300&q=80" alt="AC">
+            <p>AC सर्विस</p>
         </div>
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="Washing Machine">
-            <p>Washing Machine Repair</p>
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=300&q=80" alt="WM">
+            <p>वाशिंग मशीन</p>
         </div>
         <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1571175432291-3a5775459f3d?auto=format&fit=crop&w=400&q=80" alt="Refrigerator">
-            <p>Fridge Repair</p>
+            <img src="https://images.unsplash.com/photo-1571175432291-3a5775459f3d?auto=format&fit=crop&w=300&q=80" alt="Fridge">
+            <p>फ्रिज रिपेयर</p>
         </div>
-        <div class="gallery-item">
-            <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=400&q=80" alt="Electronics">
-            <p>Electronic Services</p>
-        </div>
+    </div>
+
+    <h2>हमारी सेवाएं (Best Rates)</h2>
+    <div class="service-box">
+        <h3>❄️ AC Service (Split/Window)</h3>
+        <p>Deep Jet Pump Cleaning & Checkup - <span class="price">@ ₹499/-</span></p>
+    </div>
+    <div class="service-box">
+        <h3>🧺 Washing Machine Repair</h3>
+        <p>Top Load, Front Load & Semi-Auto - <span class="price">@ ₹249/-</span></p>
     </div>
 
     <center>
-        <a href="https://www.google.com/maps" target="_blank" class="btn-map">📍 Navigate to Shop Location</a>
+        <a href="https://wa.me/917869248808" class="whatsapp-float">Direct WhatsApp Booking</a>
     </center>
 
-    <h2>Services & Rates (पुरानी दरें)</h2>
-    <div class="service-box">
-        <h3>AC Service (Split/Window) @ ₹499/-</h3>
-        <p>Complete jet pump cleaning and pressure check.</p>
-    </div>
-    <div class="service-box">
-        <h3>Washing Machine @ ₹249/-</h3>
-        <p>Repairing for Top load, Front load & Semi-automatic.</p>
+    <hr>
+
+    <div class="rate-us-box">
+        <h3>हमें अपनी रेटिंग दें ⭐</h3>
+        <p>अपना अनुभव शेयर करें और सीधे WhatsApp पर भेजें</p>
+        <input type="text" id="custName" placeholder="आपका नाम लिखें" required>
+        <select id="custStars">
+            <option value="⭐⭐⭐⭐⭐">5 Star - बहुत अच्छा</option>
+            <option value="⭐⭐⭐⭐">4 Star - अच्छा</option>
+            <option value="⭐⭐⭐">3 Star - ठीक है</option>
+        </select>
+        <textarea id="custMsg" rows="3" placeholder="कुछ लिखना चाहते हैं? (जैसे: बढ़िया काम किया)"></textarea>
+        <button class="submit-btn" onclick="sendRating()">Submit Rating via WhatsApp</button>
     </div>
 
-    <h2>Service Areas (बिलासपुर और आसपास)</h2>
-    <ul class="area-list">
-        <li>सरकंडा</li><li>अशोक नगर</li><li>कोनी</li><li>मंगला</li><li>सकरी</li><li>उसलापुर</li><li>तिफरा</li><li>सिरगिट्टी</li><li>रतनपुर</li><li>तखतपुर</li><li>मस्तुरी</li><li>कोटा</li><li>सीपत</li>
-    </ul>
-
-    <center style="margin: 40px 0;">
-        <p><b>अभी एक्सपर्ट को बुलाएँ:</b></p>
-        <a href="https://wa.me/917869248808" class="whatsapp-btn">Direct WhatsApp Chat</a>
-    </center>
+    <div style="background: #fff5f5; padding: 15px; border-radius: 10px; margin-top: 25px; border: 1px dashed red; font-size: 0.85em;">
+        <p><b>जरूरी सूचना:</b> 30 दिन की सर्विस वारंटी। विज़िटिंग चार्ज ₹199 (काम न होने पर) अनिवार्य है।</p>
+    </div>
 
 </div>
 
 <div class="footer">
     <p><b>VISHAL COOLING & TECHNICAL SOLUTIONS</b></p>
-    <p>📞 78692 48808 | 📍 अशोक नगर, बिलासपुर, छत्तीसगढ़</p>
-    <p>© 2026 - क्वालिटी सर्विस की गारंटी</p>
+    <p>📞 Call: 78692 48808</p>
+    <p>📍 अशोक नगर, बिलासपुर, छत्तीसगढ़</p>
 </div>
+
+<script>
+    function sendRating() {
+        const name = document.getElementById('custName').value;
+        const stars = document.getElementById('custStars').value;
+        const msg = document.getElementById('custMsg').value;
+        const phone = "917869248808";
+
+        if(name == "") {
+            alert("कृपया अपना नाम लिखें");
+            return;
+        }
+
+        const fullMsg = `नमस्ते विशाल भाई,%0A%0Aमैने आपको वेबसाइट पर रेटिंग दी है:%0A*नाम:* ${name}%0A*रेटिंग:* ${stars}%0A*मैसेज:* ${msg}`;
+        window.open(`https://wa.me/${phone}?text=${fullMsg}`, '_blank');
+    }
+</script>
 
 </body>
 </html>

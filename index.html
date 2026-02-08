@@ -3,94 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal Cooling & Solutions - Bilaspur</title>
+    <title>Vishal Cooling & Technical Solutions - Bilaspur</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.8; }
-        header { background: #004aad; color: white; padding: 40px 20px; text-align: center; }
-        .container { max-width: 900px; margin: 20px auto; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .slogan { font-style: italic; color: #ffcc00; font-weight: bold; font-size: 1.2em; }
+        /* ठंडक वाला बैकग्राउंड और स्टाइल */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); color: #333; line-height: 1.6; }
+        header { background: linear-gradient(to right, #004aad, #00c6ff); color: white; padding: 50px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { margin: 0; font-size: 2.2em; text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .slogan { font-style: italic; color: #ffcc00; font-weight: bold; font-size: 1.2em; margin-top: 10px; }
         
-        /* New Trust Section */
-        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; margin: 25px 0; text-align: center; }
-        .trust-item { background: #fffdf0; padding: 15px; border-radius: 10px; border: 1px solid #ffeeba; }
-        .trust-item span { font-size: 25px; display: block; }
-        .trust-item p { margin: 5px 0 0; font-size: 0.85em; font-weight: bold; color: #856404; }
+        .container { max-width: 1000px; margin: 20px auto; background: rgba(255, 255, 255, 0.9); padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        /* Photos Section */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 30px 0; }
+        .gallery-item { border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 3px solid #fff; transition: transform 0.3s; }
+        .gallery-item:hover { transform: scale(1.05); }
+        .gallery-item img { width: 100%; height: 180px; object-fit: cover; display: block; }
+        .gallery-item p { background: #004aad; color: white; margin: 0; padding: 10px; text-align: center; font-weight: bold; font-size: 0.9em; }
 
-        .service-box { border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 10px; border-left: 5px solid #004aad; }
-        .area-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; list-style: none; padding: 0; }
-        .area-list li { background: #f0f4f8; padding: 5px; border-radius: 4px; font-size: 0.8em; text-align: center; border: 1px solid #d1d9e0; }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 15px; margin: 25px 0; text-align: center; }
+        .trust-item { background: #f0faff; padding: 15px; border-radius: 12px; border: 1px solid #b3e5fc; }
         
-        .btn-map { background: #4285F4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; margin-bottom: 20px; }
-        .booking-form { background: #eef5ff; padding: 20px; border-radius: 10px; margin: 20px 0; border: 1px solid #cce0ff; }
-        .btn-submit { background: #004aad; color: white; padding: 15px; width: 100%; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
-        .terms { background: #fff5f5; padding: 15px; border-radius: 10px; border: 1px dashed #ff5c5c; margin-top: 20px; font-size: 0.9em; }
-        .footer { background: #111; color: white; text-align: center; padding: 30px; margin-top: 30px; }
+        .service-box { background: #fff; border: 1px solid #e1e8ed; padding: 15px; margin: 15px 0; border-radius: 12px; border-left: 6px solid #00c6ff; }
+        .btn-map { background: #4285F4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; margin: 20px 0; }
+        .area-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; list-style: none; padding: 0; }
+        .area-list li { background: #e3f2fd; padding: 8px; border-radius: 6px; font-size: 0.85em; text-align: center; font-weight: bold; color: #01579b; }
+
+        .footer { background: #111; color: white; text-align: center; padding: 40px; margin-top: 40px; }
+        .whatsapp-btn { background: #25d366; color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 15px rgba(37,211,102,0.4); }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>VISHAL COOLING & SOLUTIONS</h1>
-    <p class="slogan">"बिलासपुर की ठंडक, अब एक स्कैन की दूरी पर!"</p>
+    <h1>VISHAL COOLING & <br>TECHNICAL SOLUTIONS</h1>
+    <p class="slogan">"बिलासपुर की ठंडक, अब एक स्कैन की दूरी पर!" ❄️</p>
 </header>
 
 <div class="container">
 
     <div class="trust-grid">
-        <div class="trust-item"><span>🛠️</span><p>Expert Repair</p></div>
+        <div class="trust-item"><span>❄️</span><p>Fast Cooling</p></div>
+        <div class="trust-item"><span>🛠️</span><p>Expert Service</p></div>
         <div class="trust-item"><span>⚙️</span><p>Original Parts</p></div>
-        <div class="trust-item"><span>🕒</span><p>Fast Service</p></div>
-        <div class="trust-item"><span>✅</span><p>Verified Shop</p></div>
+        <div class="trust-item"><span>🛡️</span><p>Warranty</p></div>
     </div>
 
-    <section class="booking-form">
-        <h2 style="margin-top:0;">Book Service Online</h2>
-        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
-            <input type="text" name="name" placeholder="आपका नाम" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;" required>
-            <input type="tel" name="phone" placeholder="मोबाइल नंबर" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;" required>
-            <select name="service" style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;">
-                <option>AC Service/Repair</option>
-                <option>Washing Machine Repair</option>
-                <option>Fridge Repair</option>
-            </select>
-            <button type="submit" class="btn-submit">अभी बुकिंग भेजें</button>
-        </form>
-    </section>
+    <h2 style="text-align: center; color: #004aad;">Our Expert Works</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80" alt="AC Service">
+            <p>AC Repair & Service</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="Washing Machine">
+            <p>Washing Machine Repair</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1571175432291-3a5775459f3d?auto=format&fit=crop&w=400&q=80" alt="Refrigerator">
+            <p>Fridge Repair</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=400&q=80" alt="Electronics">
+            <p>Electronic Services</p>
+        </div>
+    </div>
 
     <center>
-        <a href="https://maps.google.com/?q=Ashok+Nagar+Sarkanda+Bilaspur" target="_blank" class="btn-map">📍 Open Shop Location in Maps</a>
+        <a href="https://www.google.com/maps" target="_blank" class="btn-map">📍 Navigate to Shop Location</a>
     </center>
 
     <h2>Services & Rates (पुरानी दरें)</h2>
     <div class="service-box">
-        <h3>❄️ AC Service @ ₹499/-</h3>
-        <p>Complete Jet Pump Cleaning and Checkup.</p>
+        <h3>AC Service (Split/Window) @ ₹499/-</h3>
+        <p>Complete jet pump cleaning and pressure check.</p>
     </div>
     <div class="service-box">
-        <h3>🧺 Washing Machine @ ₹249/-</h3>
-        <p>Expert solutions for all brands.</p>
+        <h3>Washing Machine @ ₹249/-</h3>
+        <p>Repairing for Top load, Front load & Semi-automatic.</p>
     </div>
 
-    <h2>Service Areas (40 KM Range)</h2>
+    <h2>Service Areas (बिलासपुर और आसपास)</h2>
     <ul class="area-list">
-        <li>📍 सरकंडा</li><li>📍 कोनी</li><li>📍 मंगला</li><li>📍 सकरी</li><li>📍 उसलापुर</li><li>📍 तिफरा</li><li>📍 रतनपुर</li><li>📍 तखतपुर</li><li>📍 मस्तुरी</li><li>📍 कोटा</li><li>📍 सीपत</li><li>📍 बिल्हा</li>
+        <li>सरकंडा</li><li>अशोक नगर</li><li>कोनी</li><li>मंगला</li><li>सकरी</li><li>उसलापुर</li><li>तिफरा</li><li>सिरगिट्टी</li><li>रतनपुर</li><li>तखतपुर</li><li>मस्तुरी</li><li>कोटा</li><li>सीपत</li>
     </ul>
 
-    <section class="terms">
-        <h3 style="margin-top:0; color:#c0392b;">नियम और शर्तें (Terms)</h3>
-        <p>• 30 दिन की सर्विस वारंटी।</p>
-        <p>• विज़िटिंग चार्ज अनिवार्य है (काम न होने पर)।</p>
-        <p>• हम केवल ओरिजिनल स्पेयर पार्ट्स इस्तेमाल करते हैं।</p>
-    </section>
-
-    <center>
-        <a href="https://wa.me/917869248808" style="display:inline-block; background:#25d366; color:white; padding:15px 35px; text-decoration:none; border-radius:50px; font-weight:bold; margin:25px 0; font-size:1.1em;">Direct WhatsApp Chat</a>
+    <center style="margin: 40px 0;">
+        <p><b>अभी एक्सपर्ट को बुलाएँ:</b></p>
+        <a href="https://wa.me/917869248808" class="whatsapp-btn">Direct WhatsApp Chat</a>
     </center>
+
 </div>
 
 <div class="footer">
-    <p>📞 Call: 78692 48808 | 📍 बिलासपुर, छत्तीसगढ़</p>
-    <p>© 2026 Vishal Cooling - Quality You Can Trust</p>
+    <p><b>VISHAL COOLING & TECHNICAL SOLUTIONS</b></p>
+    <p>📞 78692 48808 | 📍 अशोक नगर, बिलासपुर, छत्तीसगढ़</p>
+    <p>© 2026 - क्वालिटी सर्विस की गारंटी</p>
 </div>
 
 </body>

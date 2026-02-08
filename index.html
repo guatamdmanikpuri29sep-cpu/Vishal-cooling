@@ -3,86 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal Cooling - Complete Service & Booking</title>
+    <title>Vishal Cooling - Best Repair Service Bilaspur</title>
     <style>
         body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; line-height: 1.8; }
-        header { background: linear-gradient(rgba(0,74,173,0.95), rgba(0,74,173,0.95)), url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=1000'); background-size: cover; background-position: center; color: white; padding: 60px 20px; text-align: center; }
-        .container { max-width: 900px; margin: -40px auto 30px; background: white; padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        h2 { color: #004aad; border-left: 6px solid #004aad; padding-left: 15px; margin-top: 35px; }
-        .booking-form { background: #eef5ff; padding: 25px; border-radius: 15px; margin: 25px 0; border: 1px solid #d0e3ff; }
-        .booking-form input, .booking-form select, .booking-form textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
-        .btn-submit { background: #004aad; color: white; padding: 15px 30px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; font-size: 18px; }
-        .service-card { background: #fff; border: 1px solid #eee; padding: 15px; margin-bottom: 15px; border-radius: 10px; border-left: 5px solid #25d366; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
-        .gallery img { width: 100%; height: 150px; object-fit: cover; border-radius: 10px; }
-        .terms-box { background: #fff9e6; padding: 20px; border-radius: 15px; border: 1px dashed #ffcc00; margin-top: 30px; }
-        .footer { background: #111; color: white; text-align: center; padding: 40px 20px; margin-top: 40px; }
+        header { background: #004aad; color: white; padding: 40px 20px; text-align: center; }
+        .container { max-width: 900px; margin: 20px auto; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .slogan { font-style: italic; color: #ffcc00; font-weight: bold; font-size: 1.2em; }
+        .service-box { border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 10px; border-left: 5px solid #004aad; }
+        .booking-form { background: #eef5ff; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .booking-form input, .booking-form select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+        .btn-submit { background: #004aad; color: white; padding: 15px; width: 100%; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+        .terms { background: #fff9e6; padding: 15px; border-radius: 10px; font-size: 0.9em; margin-top: 20px; border: 1px dashed #ffcc00; }
+        .footer { background: #111; color: white; text-align: center; padding: 30px; margin-top: 30px; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>VISHAL COOLING & SOLUTIONS</h1>
-    <p>बिलासपुर की नंबर 1 रिपेयर सर्विस (AC, Fridge, Washing Machine)</p>
+    <p class="slogan">"बिलासपुर की ठंडक, अब एक स्कैन की दूरी पर!"</p>
 </header>
 
 <div class="container">
-    
     <section class="booking-form">
-        <h2>Book a Service Online</h2>
-        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST"> 
+        <h2>Online Booking (यहाँ बुक करें)</h2>
+        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
             <input type="text" name="name" placeholder="आपका नाम" required>
             <input type="tel" name="phone" placeholder="मोबाइल नंबर" required>
-            <select name="service" required>
-                <option value="">सेवा चुनें</option>
-                <option value="AC Repair">AC Repair & Service</option>
-                <option value="Fridge Repair">Refrigerator Repair</option>
-                <option value="Washing Machine">Washing Machine Repair</option>
+            <select name="service">
+                <option>AC Repair & Service</option>
+                <option>Fridge Repair</option>
+                <option>Washing Machine Repair</option>
             </select>
-            <textarea name="message" rows="3" placeholder="क्या समस्या आ रही है?"></textarea>
-            <button type="submit" class="btn-submit">अभी बुकिंग सबमिट करें</button>
+            <button type="submit" class="btn-submit">सबमिट करें</button>
         </form>
     </section>
 
-    <section>
-        <h2>Our Services & Rates</h2>
-        <div class="service-card">
-            <h3>❄️ AC Jet Pump Service @ ₹499/-</h3>
-            <p>Split और Window AC की बेहतरीन सर्विस।</p>
-        </div>
-        <div class="service-card">
-            <h3>🧺 Washing Machine @ ₹249/-</h3>
-            <p>हर प्रकार की वाशिंग मशीन का पक्का इलाज।</p>
-        </div>
-    </section>
+    <h2>Our Services (पुरानी दरें)</h2>
+    <div class="service-box">
+        <h3>❄️ AC Service @ ₹499/-</h3>
+        <p>Complete Jet Pump Cleaning.</p>
+    </div>
+    <div class="service-box">
+        <h3>🧺 Washing Machine @ ₹249/-</h3>
+        <p>Top Load & Front Load Expert.</p>
+    </div>
 
-    <section>
-        <h2>Our Work Gallery</h2>
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1599933310683-742795e26798?auto=format&fit=crop&w=500" alt="Work 1">
-            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500" alt="Work 2">
-        </div>
-    </section>
-
-    <section class="terms-box">
-        <h2>Terms & Conditions (नियम और शर्तें)</h2>
-        <ul>
-            <li>✔️ <b>30 Days Guarantee:</b> हमारे हर काम पर 30 दिन की वारंटी।</li>
-            <li>✔️ <b>Visiting Charges:</b> यदि काम चेक कराने के बाद नहीं कराया जाता, तो विजिटिंग चार्ज देय होगा।</li>
-            <li>✔️ <b>Payment:</b> हम Cash, PhonePe और Google Pay स्वीकार करते हैं।</li>
-            <li>✔️ <b>Original Parts:</b> हम केवल ओरिजिनल और बेस्ट क्वालिटी पार्ट्स का उपयोग करते हैं।</li>
-        </ul>
+    <section class="terms">
+        <h3>नियम और शर्तें (Terms)</h3>
+        <p>✔️ 30 दिन की सर्विस वारंटी</p>
+        <p>✔️ विज़िटिंग चार्ज अनिवार्य (अगर काम न कराया जाए)</p>
+        <p>✔️ ओरिजिनल स्पेयर पार्ट्स</p>
     </section>
 
     <center>
-        <a href="https://wa.me/917869248808" style="background: #25d366; color: white; padding: 15px 35px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; margin-top: 25px;">WhatsApp पर चैट करें</a>
+        <a href="https://wa.me/917869248808" style="display:inline-block; background:#25d366; color:white; padding:15px 30px; text-decoration:none; border-radius:50px; font-weight:bold; margin-top:20px;">WhatsApp Chat</a>
     </center>
 </div>
 
 <div class="footer">
-    <p>📞 Call: 78692 48808</p>
-    <p>📍 Ashok Nagar, Near DLS College, Sarkanda, Bilaspur</p>
-    <p>© 2026 Vishal Cooling & Technical Solutions</p>
+    <p>📞 Call: 78692 48808 | 📍 Ashok Nagar, Bilaspur</p>
+    <p>© 2026 Vishal Cooling Solutions</p>
 </div>
 
 </body>

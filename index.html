@@ -1,111 +1,244 @@
+
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal Cooling & Technical Solutions - Bilaspur</title>
-    <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f0faff; color: #333; }
-        header { background: linear-gradient(to right, #004aad, #00c6ff); color: white; padding: 40px 20px; text-align: center; }
-        .container { max-width: 900px; margin: 20px auto; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        
-        /* सर्विस एरिया और रेटिंग (पुराना स्टाइल) */
-        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 20px; }
-        .info-card { background: #e3f2fd; padding: 15px; border-radius: 10px; text-align: center; border: 1px solid #bbdefb; }
-        .info-card h4 { margin: 5px 0; color: #004aad; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Cooling & Technical Solutions | AC & Home Appliance Repair Bilaspur</title>
 
-        .service-box { border-left: 5px solid #004aad; background: #f9f9f9; padding: 15px; margin: 10px 0; border-radius: 5px; }
-        .price { color: #d32f2f; font-weight: bold; font-size: 1.1em; }
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f7fb;
+    color:#222;
+}
+a{text-decoration:none;color:inherit}
 
-        /* गैलरी */
-        .gallery { display: flex; gap: 10px; overflow-x: auto; margin: 20px 0; padding-bottom: 10px; }
-        .gallery img { width: 200px; height: 130px; border-radius: 10px; object-fit: cover; border: 2px solid #004aad; }
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#1e88e5,#42a5f5);
+    color:#fff;
+    text-align:center;
+    padding:30px 15px;
+}
+header h1{margin:0;font-size:26px}
+header p{margin:8px 0}
+.nav{
+    background:#0d47a1;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:10px;
+}
+.nav a{color:#fff;font-weight:600}
 
-        /* WhatsApp रेटिंग फॉर्म */
-        .rating-section { background: #fff8e1; padding: 20px; border-radius: 12px; border: 1px solid #ffe082; text-align: center; margin-top: 30px; }
-        .rating-section input, .rating-section textarea { width: 90%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
-        .btn-submit { background: #25d366; color: white; padding: 12px 25px; border: none; border-radius: 50px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; }
+/* SECTION */
+section{
+    padding:30px 15px;
+    max-width:1100px;
+    margin:auto;
+}
+h2{text-align:center;margin-bottom:25px}
 
-        /* गूगल मैप */
-        .map-container { margin-top: 20px; border-radius: 10px; overflow: hidden; border: 2px solid #004aad; }
-        
-        .footer { background: #111; color: white; text-align: center; padding: 20px; margin-top: 30px; }
-    </style>
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.card{
+    background:#fff;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+    text-align:center;
+}
+.card h3{margin-top:0;color:#1e88e5}
+
+/* PRICE */
+.price{
+    font-size:18px;
+    font-weight:bold;
+    color:#2e7d32;
+}
+
+/* BOOK SERVICE */
+.book{
+    background:#2196f3;
+    color:#fff;
+    border-radius:15px;
+    padding:30px;
+}
+.book input, .book select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:6px;
+}
+.book button{
+    width:100%;
+    padding:12px;
+    background:#0d47a1;
+    color:#fff;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+}
+.call{
+    margin-top:15px;
+    display:block;
+    background:#fff;
+    color:#0d47a1;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* MAP */
+iframe{
+    width:100%;
+    height:300px;
+    border:0;
+    border-radius:10px;
+}
+
+/* REVIEWS */
+.stars{color:#ffb300;font-size:18px}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:#fff;
+    padding:15px 18px;
+    border-radius:50px;
+    font-weight:bold;
+}
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>VISHAL COOLING & <br>TECHNICAL SOLUTIONS</h1>
-    <p><b>"बिलासपुर की ठंडक, अब आपके द्वार!"</b></p>
+<h1>Vishal Cooling & Technical Solutions</h1>
+<p>Ashok Nagar, Near DLS College, Sarkanda, Bilaspur</p>
+<p>📞 Call / WhatsApp: <b>7869248808</b></p>
+<p>Fast • Reliable • Affordable</p>
 </header>
 
-<div class="container">
-    
-    <div class="info-grid">
-        <div class="info-card">
-            <h4>📍 सर्विस एरिया</h4>
-            <p>बिलासपुर (10-40 KM तक)</p>
-        </div>
-        <div class="info-card">
-            <h4>⭐ रेटिंग</h4>
-            <p>4.9/5 (150+ Reviews)</p>
-        </div>
-    </div>
-
-    <h3>हमारी सेवाएं (Our Work)</h3>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400" alt="AC Service">
-        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400" alt="Washing Machine">
-        <img src="https://images.unsplash.com/photo-1571175432291-3a5775459f3d?w=400" alt="Fridge">
-    </div>
-
-    <h3>रेट लिस्ट (Price List)</h3>
-    <div class="service-box">
-        <h4>❄️ AC Service (Jet Pump)</h4>
-        <p>सिर्फ <span class="price">₹499/-</span> से शुरू</p>
-    </div>
-    <div class="service-box">
-        <h4>🧺 Washing Machine Repair</h4>
-        <p>विजिटिंग चार्ज <span class="price">₹249/-</span> (All Brands)</p>
-    </div>
-    <div class="service-box">
-        <h4>🧊 Refrigerator (फ्रिज)</h4>
-        <p>गैस चार्जिंग और रिपेयरिंग <span class="price">उचित दाम पर</span></p>
-    </div>
-
-    <h3>हमारी लोकेशन (Google Map)</h3>
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.1042571253456!2d82.148566!3d22.083833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDA1JzAxLjgiTiA4MsKwMDgnNTQuOCJF!5e0!3m2!1sen!2sin!4v1700000000000" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-    <div class="rating-section">
-        <h3>फीडबैक दें और सीधा व्हाट्सएप करें ⭐</h3>
-        <input type="text" id="name" placeholder="आपका नाम">
-        <textarea id="feedback" placeholder="अपनी रेटिंग और अनुभव लिखें..."></textarea>
-        <button class="btn-submit" onclick="sendToWhatsApp()">Submit Rating to Vishal</button>
-    </div>
-
-    <div style="background: #fff5f5; padding: 15px; border-radius: 10px; margin-top: 20px; border: 1px dashed red; font-size: 0.9em;">
-        <p><b>नोट:</b> 30 दिन की सर्विस वारंटी। विज़िटिंग चार्ज ₹199 (काम न होने पर) अनिवार्य है।</p>
-    </div>
-
+<div class="nav">
+<a href="#services">Services</a>
+<a href="#price">Price</a>
+<a href="#areas">Areas</a>
+<a href="#contact">Contact</a>
 </div>
 
-<div class="footer">
-    <p>📞 78692 48808 | अशोक नगर, बिलासपुर</p>
+<section id="services">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card"><h3>AC Repair & Service</h3><p>Split & Window AC, Gas Charging</p></div>
+<div class="card"><h3>Refrigerator Repair</h3><p>Single / Double Door / Inverter</p></div>
+<div class="card"><h3>Washing Machine</h3><p>Top Load / Front Load</p></div>
+<div class="card"><h3>TV Repair</h3><p>LED / LCD / Smart TV</p></div>
+<div class="card"><h3>Microwave Repair</h3><p>All Brands</p></div>
+<div class="card"><h3>Other Appliances</h3><p>Geyser, RO, Small Appliances</p></div>
 </div>
+</section>
+
+<section id="price">
+<h2>Service Price (Starting From)</h2>
+<div class="grid">
+<div class="card"><h3>AC Service</h3><p class="price">₹499 – ₹799</p></div>
+<div class="card"><h3>Fridge Repair</h3><p class="price">₹350 + Parts</p></div>
+<div class="card"><h3>Washing Machine</h3><p class="price">₹350 – ₹500</p></div>
+<div class="card"><h3>TV Repair</h3><p class="price">₹400+</p></div>
+</div>
+<p style="text-align:center;margin-top:15px">
+✔ No hidden charges ✔ Genuine parts ✔ Trained technicians
+</p>
+</section>
+
+<section id="areas">
+<h2>Service Areas</h2>
+<div class="grid">
+<div class="card">Sarkanda</div>
+<div class="card">Ashok Nagar</div>
+<div class="card">DLS College Road</div>
+<div class="card">Ratanpur</div>
+<div class="card">Kota</div>
+<div class="card">Takhatpur</div>
+<div class="card">Masturi</div>
+<div class="card">Sakri</div>
+</div>
+</section>
+
+<section class="book" id="contact">
+<h2>Book Service Now</h2>
+<input type="text" placeholder="Aapka Naam">
+<input type="tel" placeholder="Mobile Number">
+<select>
+<option>Select Service</option>
+<option>AC Repair</option>
+<option>Fridge Repair</option>
+<option>Washing Machine</option>
+<option>TV Repair</option>
+</select>
+<button onclick="sendWhatsApp()">WhatsApp Par Bheje</button>
+<a class="call" href="tel:7869248808">📞 Call Now: 7869248808</a>
+</section>
+
+<section>
+<h2>Our Location</h2>
+<iframe 
+src="https://www.google.com/maps?q=Bilaspur%20Chhattisgarh&output=embed">
+</iframe>
+</section>
+
+<section>
+<h2>Customer Ratings & Reviews</h2>
+<h1 style="text-align:center">4.9</h1>
+<p class="stars" style="text-align:center">★★★★★</p>
+
+<div class="card">
+<b>Rahul Verma</b>
+<p>Best AC service in Sarkanda. On-time & professional.</p>
+</div>
+
+<div class="card">
+<b>Anjali Sahu</b>
+<p>Fridge repair bahut jaldi ho gaya. Genuine parts.</p>
+</div>
+
+<div class="card">
+<b>Sandeep Singh</b>
+<p>Washing machine service best & affordable.</p>
+</div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/917869248808" target="_blank">
+WhatsApp Book Now
+</a>
+
+<footer>
+© 2026 Vishal Cooling & Technical Solutions | Bilaspur
+</footer>
 
 <script>
-    function sendToWhatsApp() {
-        var name = document.getElementById('name').value;
-        var feedback = document.getElementById('feedback').value;
-        var phone = "917869248808";
-        
-        if(name == "") { alert("नाम लिखें!"); return; }
-        
-        var message = "नमस्ते विशाल भाई,%0Aमेरी रेटिंग यह है:%0A*नाम:* " + name + "%0A*फीडबैक:* " + feedback;
-        window.open("https://wa.me/" + phone + "?text=" + message, '_blank');
-    }
+function sendWhatsApp(){
+    window.open("https://wa.me/917869248808?text=Hello%20Vishal%20Cooling,%20service%20book%20karna%20hai");
+}
 </script>
 
 </body>

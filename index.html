@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Vishal Cooling & Technical Solutions | AC & Home Appliance Repair Bilaspur</title>
 
-<meta name="keywords" content="AC Repair in Bilaspur, Fridge Repair Sarkanda, Washing Machine Repair Near Me, AC Service Bilaspur, Home Appliance Repair Bilaspur">
+<meta name="keywords" content="
+AC Repair in Bilaspur,
+Fridge Repair Sarkanda,
+Washing Machine Repair Near Me,
+AC Service Bilaspur,
+Home Appliance Repair Bilaspur
+">
 <meta name="author" content="Vishal Cooling & Technical Solutions">
 
 <style>
@@ -26,7 +33,17 @@ header{
   padding:30px 15px;
 }
 header h1{margin:0;font-size:26px}
-header p{margin:8px 0}
+header p{margin:6px 0}
+
+/* HERO */
+.hero{
+  background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  padding:60px 15px;
+  text-align:center;
+  color:white;
+}
+.hero h1{font-size:28px}
+.hero p{font-size:18px}
 
 /* NAV */
 .nav{
@@ -36,17 +53,9 @@ header p{margin:8px 0}
   gap:20px;
   padding:10px;
 }
-.nav a{color:#fff;font-weight:600}
+.nav a{color:#fff;font-weight:bold}
 
-/* HERO */
-.hero{
-  background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
-  padding:60px 15px;
-  text-align:center;
-  color:#fff;
-}
-
-/* SECTION */
+/* SECTIONS */
 section{
   padding:30px 15px;
   max-width:1100px;
@@ -70,7 +79,7 @@ h2{text-align:center;margin-bottom:25px}
 .card h3{margin-top:0;color:#1e88e5}
 
 /* PRICE */
-.price{font-weight:bold;color:#2e7d32}
+.price{font-size:18px;font-weight:bold;color:#2e7d32}
 
 /* BOOK */
 .book{
@@ -91,13 +100,13 @@ h2{text-align:center;margin-bottom:25px}
   padding:12px;
   background:#0d47a1;
   color:#fff;
+  font-size:16px;
   border:none;
   border-radius:8px;
-  font-size:16px;
 }
 .call{
-  display:block;
   margin-top:15px;
+  display:block;
   background:#fff;
   color:#0d47a1;
   padding:12px;
@@ -114,27 +123,48 @@ iframe{
   border-radius:10px;
 }
 
-/* REVIEWS */
+/* STARS */
 .stars{color:#ffb300;font-size:20px}
 
-/* WHATSAPP FLOAT */
+/* FLOAT WHATSAPP */
 .whatsapp{
   position:fixed;
-  bottom:20px;
+  bottom:90px;
   right:20px;
   background:#25d366;
   color:#fff;
   padding:15px 18px;
   border-radius:50px;
   font-weight:bold;
+  z-index:999;
 }
 
-/* FOOTER */
+/* STICKY BAR */
+.sticky-bar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  display:flex;
+  z-index:9999;
+}
+.sticky-bar a{
+  flex:1;
+  text-align:center;
+  padding:15px;
+  font-size:18px;
+  font-weight:bold;
+  color:#fff;
+}
+.call-btn{background:#0d47a1}
+.wa-btn{background:#25d366}
+
 footer{
   background:#0d47a1;
   color:#fff;
   text-align:center;
   padding:20px;
+  margin-top:40px;
 }
 </style>
 </head>
@@ -148,6 +178,13 @@ footer{
 <p>Fast • Reliable • Affordable</p>
 </header>
 
+<div class="hero">
+<h1>Bilaspur’s Trusted AC & Home Appliance Repair</h1>
+<p>⚡ Same Day Service • 🚐 30–60 Min Visit • 💯 Genuine Parts</p>
+<p><b>⭐ Rated 4.9 on Google | 1000+ Happy Customers</b></p>
+<p style="font-weight:bold;color:#ffeb3b;">🚨 Emergency Repair Available</p>
+</div>
+
 <div class="nav">
 <a href="#services">Services</a>
 <a href="#price">Price</a>
@@ -155,21 +192,15 @@ footer{
 <a href="#contact">Contact</a>
 </div>
 
-<div class="hero">
-<h1>Bilaspur’s Trusted AC & Home Appliance Repair</h1>
-<p>⚡ Same Day Service • 🚐 30–60 Min Visit • 💯 Genuine Parts</p>
-<p><b>⭐ Rated 4.9 on Google | 1000+ Happy Customers</b></p>
-</div>
-
 <section id="services">
 <h2>Our Services</h2>
 <div class="grid">
-<div class="card"><h3>AC Repair & Service</h3><p>Split & Window AC, Gas Charging</p></div>
-<div class="card"><h3>Refrigerator Repair</h3><p>Single / Double Door / Inverter</p></div>
-<div class="card"><h3>Washing Machine</h3><p>Top Load / Front Load</p></div>
-<div class="card"><h3>TV Repair</h3><p>LED / LCD / Smart TV</p></div>
-<div class="card"><h3>Microwave Repair</h3><p>All Brands</p></div>
-<div class="card"><h3>Other Appliances</h3><p>Geyser, RO, Small Appliances</p></div>
+<div class="card"><h3>AC Repair & Service</h3><p>Split & Window AC</p></div>
+<div class="card"><h3>Refrigerator Repair</h3></div>
+<div class="card"><h3>Washing Machine</h3></div>
+<div class="card"><h3>TV Repair</h3></div>
+<div class="card"><h3>Microwave Repair</h3></div>
+<div class="card"><h3>Other Appliances</h3></div>
 </div>
 </section>
 
@@ -178,24 +209,26 @@ footer{
 <div class="grid">
 <div class="card">✔ 10+ Years Experience</div>
 <div class="card">✔ Same Day Service</div>
-<div class="card">✔ Genuine Spare Parts</div>
-<div class="card">✔ Local Trusted Technician</div>
+<div class="card">✔ Genuine Parts</div>
 <div class="card">✔ Affordable Pricing</div>
-<div class="card">✔ 1000+ Happy Customers</div>
 </div>
 </section>
 
-<section style="background:#ffeb3b;text-align:center;font-weight:bold;">
-🚨 Emergency Repair Available • Call Now: <a href="tel:7869248808">7869248808</a>
+<section style="background:#e8f5e9;text-align:center;border-radius:10px;">
+<h3>💰 Transparent Pricing Promise</h3>
+<p>
+✔ Visiting Charge <b>₹199</b><br>
+✔ No Repair – No Charge<br>
+✔ Pehle bataya jayega, phir kaam
+</p>
 </section>
 
 <section id="price">
 <h2>Service Price (Starting From)</h2>
 <div class="grid">
-<div class="card"><h3>AC Service</h3><p class="price">₹499 – ₹799</p></div>
-<div class="card"><h3>Fridge Repair</h3><p class="price">₹350 + Parts</p></div>
-<div class="card"><h3>Washing Machine</h3><p class="price">₹350 – ₹500</p></div>
-<div class="card"><h3>TV Repair</h3><p class="price">₹400+</p></div>
+<div class="card"><h3>AC Service</h3><p class="price">₹499–₹799</p></div>
+<div class="card"><h3>Fridge Repair</h3><p class="price">₹350+</p></div>
+<div class="card"><h3>Washing Machine</h3><p class="price">₹350+</p></div>
 </div>
 </section>
 
@@ -207,8 +240,6 @@ footer{
 <div class="card">Ratanpur</div>
 <div class="card">Kota</div>
 <div class="card">Takhatpur</div>
-<div class="card">Masturi</div>
-<div class="card">Sakri</div>
 </div>
 </section>
 
@@ -216,7 +247,6 @@ footer{
 <h2>Book Service Now</h2>
 <input type="text" placeholder="Aapka Naam">
 <input type="tel" placeholder="Mobile Number">
-<input type="text" placeholder="Area / Landmark">
 <select>
 <option>Select Service</option>
 <option>AC Repair</option>
@@ -224,8 +254,9 @@ footer{
 <option>Washing Machine</option>
 <option>TV Repair</option>
 </select>
+<input type="text" placeholder="Area / Landmark">
 <button onclick="sendWhatsApp()">WhatsApp Par Bheje</button>
-<a class="call" href="tel:7869248808">📞 Call Now: 7869248808</a>
+<a class="call" href="tel:7869248808">📞 Call Now</a>
 </section>
 
 <section>
@@ -234,12 +265,18 @@ footer{
 </section>
 
 <section>
-<h2>Customer Ratings & Reviews</h2>
+<h2>Customer Reviews</h2>
 <h1 style="text-align:center">4.9</h1>
 <p class="stars" style="text-align:center">★★★★★</p>
+<div class="card">Best AC service in Sarkanda – Rahul</div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/917869248808" target="_blank">WhatsApp</a>
+<a class="whatsapp" href="https://wa.me/917869248808" target="_blank">WhatsApp Book</a>
+
+<div class="sticky-bar">
+<a href="tel:7869248808" class="call-btn">📞 Call</a>
+<a href="https://wa.me/917869248808" class="wa-btn">💬 WhatsApp</a>
+</div>
 
 <footer>
 © 2026 Vishal Cooling & Technical Solutions | Bilaspur
@@ -247,12 +284,12 @@ footer{
 
 <script>
 function sendWhatsApp(){
-let msg = `Hello Vishal Cooling,
+let msg=`Hello Vishal Cooling,
 Mujhe service chahiye.
 
-Service Type:
+Service:
 Area:
-Urgency: Today / Tomorrow`;
+Urgency:`; 
 window.open("https://wa.me/917869248808?text="+encodeURIComponent(msg));
 }
 </script>

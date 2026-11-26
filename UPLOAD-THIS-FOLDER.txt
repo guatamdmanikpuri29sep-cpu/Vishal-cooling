@@ -1,0 +1,5 @@
+FINAL WEBSITE UPDATE — VISHAL COOLING & TECHNICAL SOLUTIONS
+
+Upload ALL files and folders inside this folder to the ROOT of your GitHub repository (Vishal-cooling), not the ZIP itself. Keep index.html at the repository root. When GitHub asks, replace files with the same names. Commit changes to the main branch.
+
+Includes: Grey + Navy T-shirt branding, service-specific photos, real shop/AC photos, Google Maps embed and Get Directions button, responsive mobile layout, pricing/contact/service pages, sitemap.xml and robots.txt.

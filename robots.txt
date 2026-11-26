@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guatamdmanikpuri29sep-cpu.github.io/Vishal-cooling/sitemap.xml
